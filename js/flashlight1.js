@@ -23,7 +23,7 @@ function toggleFlashLight() {
                 else {
                     toggleFLButton.textContent = "Turn ON Flashlight";
                 } 
-                window.plugins.flashlight.toggle(onSuccess, onError);
+                flashlight.toggle(onSuccess, onError);
             //}
             //else {
             //    alert("Flashlight not available on this device");
