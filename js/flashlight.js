@@ -14,8 +14,8 @@ function toggleFlashLight() {
         alert("Not Supported in Simulator.");
     }
     else {
-        window.plugins.flashlight.available(function(isAvailable) {
-            if (isAvailable) {
+        //window.plugins.flashlight.available(function(isAvailable) {
+            //if (isAvailable) {
                 // toggle on/off
                 if (toggleFLButton.textContent === "Turn ON Flashlight") {
                     toggleFLButton.textContent = "Turn OFF Flashlight";
@@ -24,10 +24,10 @@ function toggleFlashLight() {
                     toggleFLButton.textContent = "Turn ON Flashlight";
                 } 
                 window.plugins.flashlight.toggle(onSuccess, onError);
-            }
-            else {
-                alert("Flashlight not available on this device");
-            }
+            //}
+            //else {
+            //    alert("Flashlight not available on this device");
+            //}
         });
     }
 }
