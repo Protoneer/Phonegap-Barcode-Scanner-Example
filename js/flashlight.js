@@ -4,7 +4,7 @@ var msg;
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
-    navigator.splashscreen.hide();
+    //navigator.splashscreen.hide();
     toggleFLButton = document.getElementById("buttonToggleFL");
     toggleFLButton.addEventListener("click", toggleFlashLight);
 }
