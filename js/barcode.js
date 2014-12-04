@@ -10,15 +10,15 @@ cordova.plugins.barcodeScanner.scan(
       alert("Scanning failed: " + error);
   });}
   
-cordova.plugins.flashlight.available(function(isAvailable) {
+window.plugins.flashlight.available(function(isAvailable) {
   if (isAvailable) {
 
     // switch on
-    cordova.plugins.flashlight.switchOn(); // success/error callbacks may be passed
+    window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
 
     // switch off after 3 seconds
     setTimeout(function() {
-      cordova.plugins.flashlight.switchOff(); // success/error callbacks may be passed
+      window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
     }, 3000);
 
   } else {
