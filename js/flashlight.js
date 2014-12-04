@@ -28,7 +28,7 @@ function toggleFlashLight() {
             //else {
             //    alert("Flashlight not available on this device");
             //}
-        });
+        //});
     }
 }
 
